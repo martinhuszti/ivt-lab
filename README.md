@@ -1,3 +1,3 @@
 # ivt-lab
 
-Változtatás a Readme-be
+VáltoMáshogy B szerinteztatás a Readme-be
