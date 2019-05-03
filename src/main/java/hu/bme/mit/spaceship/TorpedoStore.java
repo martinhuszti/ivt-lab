@@ -7,6 +7,8 @@ import java.util.Random;
 *
 * (Deliberately contains bugs.)
 */
+
+private Random randomgenerator = new Random()
 public class TorpedoStore {
 
   // rate of failing to fire torpedos [0.0, 1.0]
@@ -36,7 +38,7 @@ public class TorpedoStore {
     boolean success = false;
 
     // simulate random overheating of the launcher bay which prevents firing
-    double r = new Random().nextDouble();
+    double r = randomgenerator.nextDouble();
 
     if (r >= FAILURE_RATE) {
       // successful firing
